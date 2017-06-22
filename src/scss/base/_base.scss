@@ -1,10 +1,16 @@
 /*  ./src/scss/base/_base.scss
 */
 
+* {
+  box-sizing: border-box;
+}
 
+html,
 body {
-  padding: 0;
+  height: 100%;
+  width: 100%;
   margin: 0;
+  padding: 0;
   color: $base-font-color;
   background-color: #e2e2e2;
 }

@@ -3,6 +3,7 @@
 *   contains global styles, such as normalize, typography, colors, etc
 */
 
+
 // normalize
 @import "../../node_modules/normalize-scss/sass/normalize";
 
@@ -10,4 +11,4 @@
 @import "color";
 
 // base styles
-@import "global";
+@import "base";
