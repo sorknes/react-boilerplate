@@ -1,0 +1,27 @@
+/*  ./src/scss/base.scss
+*/
+
+
+body {
+  width: percentage(5/7);
+  background-color: #ccc;
+}
+
+.test {
+  background-image: url('../assets/images/youtube.svg');
+  background-color: white;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100px 100px;
+}
+
+.unused {
+  background-color: purple;
+
+  transform: scale3d();
+  animation: MyAnimation 2s;
+  display: flex;
+  transition: all .5s;
+  user-select: none;
+  background: linear-gradient(to bottom, white, black);
+}
