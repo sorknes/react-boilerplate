@@ -1,0 +1,13 @@
+/*  ./src/scss/base/_all-base.scss
+*
+*   contains global styles, such as normalize, typography, colors, etc
+*/
+
+// normalize
+@import "../../node_modules/normalize-scss/sass/normalize";
+
+// colors
+@import "color";
+
+// base styles
+@import "global";

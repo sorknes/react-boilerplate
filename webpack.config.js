@@ -24,8 +24,9 @@ const HtmlWebpackPlugin = require('html-webpack-plugin'),
 const nodeEnv           = process.env.NODE_ENV || 'development',
       isProduction      = nodeEnv === 'production';
 
+
 // set port
-const devPort           = 8080;
+const devPort           = 8090;
 
 
 // set source paths

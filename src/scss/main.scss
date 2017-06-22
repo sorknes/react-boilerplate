@@ -1,5 +1,14 @@
 /*  ./src/scss/main.scss
+*
+*   output file that brings together all the parts
 */
 
+@import "utils/all-utils";
 
-@import "base";
+@import "base/all-base";
+@import "layout/all-layout";
+@import "components/all-components"
+
+// @import "pages/";
+
+// @import "vendor/";

@@ -10,8 +10,6 @@ class App extends React.Component {
     return (
       <div className="test">
         <h1>Hello World</h1>
-        <p>My first React component - Yeah!!!</p>
-        <p>New line... More? More?...</p>
       </div>
     );
   }
