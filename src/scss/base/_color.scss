@@ -2,6 +2,36 @@
 */
 
 
-// base colors
-$base-font-color: #333;
-$alt-font-color:  #118FBF;
+// font colors
+$font-base-color: #333;
+$font-alt-color:  #118FBF;
+
+
+// color maps
+$colors-map: (
+  grey-scale: (
+    100: rgba(255, 255, 255, 1), // #FFFFFF	--> white (Safe 16 SVG Hex3)
+    90:  rgba(229, 229, 229, 1), // #E5E5E5 --> grey90
+    80:  rgba(204, 204, 204, 1), // #CCCCCC --> grey80 (Safe Hex3)
+    70:  rgba(179, 179, 179, 1), // #B3B3B3 --> grey70
+    60:  rgba(153, 153, 153, 1), // #999999 --> grey60 (Safe Hex3)
+    50:  rgba(127, 127, 127, 1), // #7F7F7F --> grey50
+    40:  rgba(102, 102, 102, 1), // #666666 --> grey40 (Safe Hex3)
+    30:  rgba(77, 77, 77, 1),    // #4D4D4D --> grey30
+    20:  rgba(51, 51, 51, 1),    // #333333 --> grey20 (Safe Hex3)
+    10:  rgba(26, 26, 26, 1),    // #1A1A1A --> grey10
+    0:   rgba(0, 0, 0, 1)        // #000000 --> black (Safe 16 SVG Hex3)
+  )
+);
+
+// retrieve color from $colors-map ie. `color(grey-scale, 90)`
+@function color($color-name, $color-variant) {
+  // map inception
+  @return map-get(map-get($colors-map, $color-name), $color-variant);
+}
+
+/* Example usage:
+*
+*  background-color: color(grey-scale, 90);
+*
+*/
