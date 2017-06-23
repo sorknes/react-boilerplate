@@ -6,7 +6,6 @@
 $font-base-color: #333;
 $font-alt-color:  #118FBF;
 
-
 // color maps
 $colors-map: (
   grey-scale: (
@@ -30,8 +29,7 @@ $colors-map: (
   @return map-get(map-get($colors-map, $color-name), $color-variant);
 }
 
-/* Example usage:
-*
-*  background-color: color(grey-scale, 90);
-*
-*/
+// Example usage:
+.unused {
+  background-color: color(grey-scale, 90);
+}

@@ -3,12 +3,17 @@
 *   output file that brings together all the parts
 */
 
-
+// contains global mixins, functions, helper selectors, etc.
 @import "utils/all-utils";
 
+// contains global styles, such as normalize, typography, colors, etc
 @import "base/all-base";
+
+// contains styling for larger layout components; e.g. nav, header, footer, etc.
 @import "layout/all-layout";
-@import "components/all-components"
+
+// contains each self-contained component in its own .scss partial
+@import "components/all-components";
 
 // @import "pages/";
 

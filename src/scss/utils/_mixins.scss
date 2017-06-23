@@ -1,2 +1,45 @@
 /*  ./src/scss/utils/_mixins.scss
 */
+
+
+// BEM Mixins
+@mixin element($element) { // block Element
+    &__#{$element} {
+        @content;
+    }
+}
+
+@mixin modifier($modifier) { // block Modifier
+    &--#{$modifier} {
+        @content;
+    }
+}
+
+@mixin e($element) { // @alias element
+    @include element($element)  {
+        @content;
+    }
+}
+
+@mixin m($modifier) { // @alias modifier
+    @include modifier($modifier) {
+        @content;
+    }
+}
+
+// Example usage:
+.unused {
+    // CSS declarations for .unused
+
+    @include e('element') {
+        // CSS declarations for .unused__element
+    }
+
+    @include m('modifier') {
+        // CSS declarations for .unused--modifier
+
+        @include e('element') {
+            // CSS declarations for .unused--modifier__element
+        }
+    }
+}

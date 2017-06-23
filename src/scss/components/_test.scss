@@ -1,0 +1,11 @@
+/*  ./src/scss/components/_test.scss
+*/
+
+
+.test {
+  background-color: color(grey-scale, 10);
+
+  @include e('element') {
+    background-color: red;
+  }
+}

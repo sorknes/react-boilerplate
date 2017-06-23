@@ -12,5 +12,7 @@ body {
   margin: 0;
   padding: 0;
   color: $font-alt-color;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
   background-color: color(grey-scale, 90);
 }
