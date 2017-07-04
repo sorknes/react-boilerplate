@@ -1,0 +1,48 @@
+/*  ./src/scss/utils/_bem.scss
+*/
+
+
+// BEM
+@mixin element($element) { // block Element
+    &__#{$element} {
+        @content;
+    }
+}
+
+@mixin modifier($modifier) { // block Modifier
+    &--#{$modifier} {
+        @content;
+    }
+}
+
+@mixin e($element) { // @alias element
+    @include element($element)  {
+        @content;
+    }
+}
+
+@mixin m($modifier) { // @alias modifier
+    @include modifier($modifier) {
+        @content;
+    }
+}
+
+/* Example usage:
+*  ------------------------------------------------------------------------------------
+*  .class-name {
+*      // CSS declarations for .class-name
+*
+*      @include e('element') {
+*          // CSS declarations for .class-name__element
+*      }
+*
+*      @include m('modifier') {
+*          // CSS declarations for .class-name--modifier
+*
+*          @include e('element') {
+*              // CSS declarations for .class-name--modifier__element
+*          }
+*      }
+*  }
+*  ------------------------------------------------------------------------------------
+*/

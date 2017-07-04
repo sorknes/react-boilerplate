@@ -3,7 +3,7 @@
 
 
 // convert px to em
-@function em($pixels, $context: $browser-context) {
+@function em($pixels, $context: $base-font-size) {
   @if (unitless($pixels)) {
     $pixels: $pixels * 1px;
   }

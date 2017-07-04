@@ -3,11 +3,9 @@
 *   contains global mixins, functions, helper selectors, etc.
 */
 
-// base-font-size
-$browser-context: 16px;
 
 // contains all mixins
-@import "mixins";
+@import "./mixins/bem";
 
 // contains all fonctions
-@import "functions";
+@import "./functions/pxtoem";

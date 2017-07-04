@@ -1,14 +1,24 @@
 /*  ./src/scss/base/_typography.scss
 */
 
-
-// base font styles
-$base-font-size: $browser-context; // ./src/scss/utils/_all-utils.scss
-$base-line-height: 1.5;
-
 // headings
 h1 {
   margin-top: 0;
   margin-bottom: em(30px);
   font-size: $base-font-size * 3;
+}
+
+p,
+ul,
+ol,
+dl {
+    
+}
+
+a {
+  color: $font-link-color;
+
+  &:visited {
+    color: $font-link-color;
+  }
 }

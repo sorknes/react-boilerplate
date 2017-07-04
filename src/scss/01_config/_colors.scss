@@ -4,7 +4,9 @@
 
 // font colors
 $font-base-color: #333;
-$font-alt-color:  #118FBF;
+$font-alt-color:  #ccc;
+$font-link-color: #118fbf;
+
 
 // color maps
 $colors-map: (
@@ -29,7 +31,10 @@ $colors-map: (
   @return map-get(map-get($colors-map, $color-name), $color-variant);
 }
 
-// Example usage:
-.unused {
-  background-color: color(grey-scale, 90);
-}
+/* Example usage:
+*  ------------------------------------------------------------------------------------
+*  .class-name {
+*      background-color: color(grey-scale, 90);
+*  }
+*  ------------------------------------------------------------------------------------
+*/

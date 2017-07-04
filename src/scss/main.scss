@@ -3,18 +3,21 @@
 *   output file that brings together all the parts
 */
 
+
+// 01 config - contains global styles, such as breakpoints, fonts, colors, etc
+@import '01_config/all-configs';
+
 // contains global mixins, functions, helper selectors, etc.
-@import "utils/all-utils";
+@import '02_utilities/all-utils';
 
 // contains global styles, such as normalize, typography, colors, etc
-@import "base/all-base";
-
-// contains styling for larger layout components; e.g. nav, header, footer, etc.
-@import "layout/all-layout";
+@import '03_base/all-bases';
 
 // contains each self-contained component in its own .scss partial
-@import "components/all-components";
+@import '04_components/all-components';
 
-// @import "pages/";
+// contains styling for larger layout components; e.g. nav, header, footer, etc.
+@import '05_layout/all-layouts';
 
-// @import "vendor/";
+// contains styling from external vendors
+@import '06_vendor/all-vendors';

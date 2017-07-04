@@ -1,0 +1,26 @@
+/*  ./src/scss/01_config/_breakpoints.scss
+*/
+
+// Transition timing
+$instant:     0ms;
+$super-fast:  100ms;
+$fast:        200ms;
+$default:     300ms;
+$easy:        500ms;
+$slow:        800ms;
+
+@mixin transition($default) {
+  transition: all $default ease-in-out
+}
+
+@mixin transition-bg($default) {
+  transition: background-color $default ease-in-out
+}
+
+@mixin transition-border($default) {
+  transition: border $default ease-in-out
+}
+
+@mixin transition-color($default) {
+  transition: color $default ease-in-out
+}
