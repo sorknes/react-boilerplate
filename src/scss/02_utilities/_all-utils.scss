@@ -6,6 +6,9 @@
 
 // contains all mixins
 @import "./mixins/bem";
+@import "./mixins/font-smoothing";
+@import "./mixins/transitions";
 
 // contains all fonctions
 @import "./functions/pxtoem";
+@import "./functions/pxtorem";

@@ -1,9 +1,9 @@
-/*  ./src/scss/utils/functions/pxtoem.scss
+/*  ./src/scss/utils/functions/pxtorem.scss
 */
 
 
-// convert px to em
-@function em($pixels, $context: $base-font-size) {
+// convert px to rem
+@function rem($pixels, $context: $base-font-size) {
   @if (unitless($pixels)) {
     $pixels: $pixels * 1px;
   }
@@ -12,13 +12,13 @@
     $context: $context * 1px;
   }
 
-  @return $pixels / $context * 1em;
+  @return $pixels / $context * 1rem;
 }
 
 /* Example usage:
 *  ------------------------------------------------------------------------------------
 *  .class-name {
-*    padding: em(16); // converts to: padding: 1em;
+*    font-size: rem(38);
 *  }
 *  ------------------------------------------------------------------------------------
 */

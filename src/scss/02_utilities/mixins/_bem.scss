@@ -1,8 +1,7 @@
-/*  ./src/scss/utils/_bem.scss
+/*  ./src/scss/utils/mixins/_bem.scss
 */
 
 
-// BEM
 @mixin element($element) { // block Element
     &__#{$element} {
         @content;

@@ -5,19 +5,25 @@
 
 
 // 01 config - contains global styles, such as breakpoints, fonts, colors, etc
-@import '01_config/all-configs';
+@import "01_config/all-configs";
 
 // contains global mixins, functions, helper selectors, etc.
-@import '02_utilities/all-utils';
+@import "02_utilities/all-utils";
 
 // contains global styles, such as normalize, typography, colors, etc
-@import '03_base/all-bases';
+@import "03_base/all-bases";
 
 // contains each self-contained component in its own .scss partial
-@import '04_components/all-components';
+@import "04_components/all-components";
 
 // contains styling for larger layout components; e.g. nav, header, footer, etc.
-@import '05_layout/all-layouts';
+@import "05_layout/all-layouts";
+
+// contains different helper classes; e.g. hidden, etc.
+@import "06_helpers/all-helpers";
 
 // contains styling from external vendors
-@import '06_vendor/all-vendors';
+@import "07_vendor/all-vendors";
+
+// contains print specific styling
+@import "print"
