@@ -31,7 +31,7 @@ $colors-map: (
   @return map-get(map-get($colors-map, $color-name), $color-variant);
 }
 
-/* Example usage:
+/* example usage:
 *  ------------------------------------------------------------------------------------
 *  .class-name {
 *      background-color: color(grey-scale, 90);
