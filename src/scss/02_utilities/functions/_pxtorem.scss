@@ -1,8 +1,12 @@
-/*  ./src/scss/utils/functions/pxtorem.scss
+/* path to file: ./src/scss/02_utilities/functions/pxtorem.scss
+*
+*  description: 
+*  ------------------------------------------------------------------------------------
 */
 
 
-// convert px to rem
+/* convert px to rem
+*/
 @function rem($pixels, $context: $base-font-size) {
   @if (unitless($pixels)) {
     $pixels: $pixels * 1px;

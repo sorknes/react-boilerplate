@@ -1,8 +1,12 @@
-/*  ./src/scss/utils/functions/pxtoem.scss
+/* path to file: ./src/scss/02_utilities/functions/pxtoem.scss
+*
+*  description: 
+*  ------------------------------------------------------------------------------------
 */
 
 
-// convert px to em
+/* convert px to em
+*/
 @function em($pixels, $context: $base-font-size) {
   @if (unitless($pixels)) {
     $pixels: $pixels * 1px;

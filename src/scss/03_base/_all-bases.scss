@@ -1,14 +1,18 @@
-/*  ./src/scss/base/_all-base.scss
+/* path to file: ./src/scss/03_base/_all-base.scss
 *
-*   contains global styles, such as normalize, typography, colors, etc
+*  description: 
+*  ------------------------------------------------------------------------------------
 */
 
 
-// normalize
+/* normalize
+*/
 @import "normalize";
 
-// base font style
+/* base font style
+*/
 @import "typography";
 
-// base styles
+/* base styles
+*/
 @import "base";

@@ -1,6 +1,7 @@
-/*  ./src/scss/main.scss
+/* path to file: ./src/scss/main.scss
 *
-*   output file that brings together all the parts
+*  description: output file that brings together all the parts
+*  ------------------------------------------------------------------------------------
 */
 
 
@@ -26,4 +27,4 @@
 @import "07_vendor/all-vendors";
 
 // contains print specific styling
-@import "print"
+@import "print";

@@ -1,13 +1,20 @@
-/*  ./src/scss/base/_typography.scss
+/* path to file: ./src/scss/03_base/_typography.scss
+*
+*  description: 
+*  ------------------------------------------------------------------------------------
 */
 
-// headings
+
+/* headings
+*/
 h1 {
   margin-top: 0;
   margin-bottom: em(30px);
   font-size: $base-font-size * 3;
 }
 
+/* paragraphs, list, etc.
+*/
 p,
 ul,
 ol,
@@ -15,6 +22,8 @@ dl {
     
 }
 
+/* links
+*/
 a {
   color: $font-link-color;
 

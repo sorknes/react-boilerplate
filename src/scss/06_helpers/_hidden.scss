@@ -1,15 +1,20 @@
-/*  ./src/scss/helpers/_hidden.scss
+/* path to file: ./src/scss/06_helpers/_hidden.scss
+*
+*  description: 
+*  ------------------------------------------------------------------------------------
 */
 
 
-// hide from both screenreaders and browsers: h5bp.com/u
+/* hide from both screenreaders and browsers: h5bp.com/u
+*/
 %is-hidden,
 .is-hidden {
 	display: none;
 	visibility: hidden;
 }
 
-// hide only visually, but have it available for screenreaders: h5bp.com/v
+/* hide only visually, but have it available for screenreaders: h5bp.com/v
+*/
 %is-vishidden,
 .is-vishidden {
 	border: 0;
@@ -22,7 +27,8 @@
 	width: 1px;
 }
 
-// hidden element becomes visible when it gets focus: h5bp.com/p
+/* hidden element becomes visible when it gets focus: h5bp.com/p
+*/
 %is-vishidden-focusable,
 .is-vishidden-focusable {
 	&:active,
@@ -36,13 +42,15 @@
 	}
 }
 
-// hide visually and from screenreaders, but maintain layout
+/* hide visually and from screenreaders, but maintain layout
+*/
 %invisible,
 .invisible {
   visibility: hidden;
 }
 
-// hide if JS is enabled, show if JS is disabled
+/* hide if JS is enabled, show if JS is disabled
+*/
 .hide-if-js {
     @extend %is-hidden;
 

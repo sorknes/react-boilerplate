@@ -1,7 +1,11 @@
-/*  ./src/scss/base/_base.scss
+/* path to file: ./src/scss/03_base/_base.scss
+*
+*  description: contains global styles, such as normalize, typography, colors, etc
+*  ------------------------------------------------------------------------------------
 */
 
-* {
+
+*, *:before, *:after {
   box-sizing: border-box;
 }
 
@@ -15,4 +19,6 @@ body {
   font-size: $base-font-size;
   line-height: $base-line-height;
   background-color: color(grey-scale, 90);
+
+  @include font-smoothing;
 }

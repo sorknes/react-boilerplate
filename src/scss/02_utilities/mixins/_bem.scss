@@ -1,26 +1,37 @@
-/*  ./src/scss/utils/mixins/_bem.scss
+/* path to file: ./src/scss/02_utilities/mixins/_bem.scss
+*
+*  description: 
+*  ------------------------------------------------------------------------------------
 */
 
 
-@mixin element($element) { // block Element
+/* block Element
+*/
+@mixin element($element) {
     &__#{$element} {
         @content;
     }
 }
 
-@mixin modifier($modifier) { // block Modifier
+/* block Modifier
+*/
+@mixin modifier($modifier) {
     &--#{$modifier} {
         @content;
     }
 }
 
-@mixin e($element) { // @alias element
+/* @alias element
+*/
+@mixin e($element) {
     @include element($element)  {
         @content;
     }
 }
 
-@mixin m($modifier) { // @alias modifier
+/* @alias modifier
+*/
+@mixin m($modifier) {
     @include modifier($modifier) {
         @content;
     }

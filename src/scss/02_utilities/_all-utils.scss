@@ -1,14 +1,17 @@
-/*  ./src/scss/utils/_all-utils.scss
+/* path to file: ./src/scss/02_utilities/_all-utils.scss
 *
-*   contains global mixins, functions, helper selectors, etc.
+*  description: contains global mixins, functions, helper selectors, etc.
+*  ------------------------------------------------------------------------------------
 */
 
 
-// contains all mixins
+/* contains all mixins
+*/
 @import "./mixins/bem";
 @import "./mixins/font-smoothing";
 @import "./mixins/transitions";
 
-// contains all fonctions
+/* contains all fonctions
+*/
 @import "./functions/pxtoem";
 @import "./functions/pxtorem";
