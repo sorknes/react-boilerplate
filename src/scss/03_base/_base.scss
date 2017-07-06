@@ -19,6 +19,4 @@ body {
   font-size: $base-font-size;
   line-height: $base-line-height;
   background-color: color(grey-scale, 90);
-
-  @include font-smoothing;
 }
