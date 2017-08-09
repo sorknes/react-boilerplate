@@ -1,6 +1,8 @@
-/*  ------------------------------------------------
-./src/components/home/Home.jsx
----------------------------------------------------- */
+/* path to file: ./src/components/home/Home.jsx
+*
+*  description: 
+*  ------------------------------------------------------------------------------------
+*/
 
 
 import React, { Component } from 'react';
@@ -10,6 +12,8 @@ class Home extends React.Component {
 		return (
 			<div className="test">
         <p>Lorm ipsum dolor sit amet</p>
+
+				test
       </div>
 		);
 	}

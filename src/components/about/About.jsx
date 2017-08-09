@@ -1,4 +1,4 @@
-/* path to file: ./src/components/header/Header.jsx
+/* path to file: ./src/components/about/About.jsx
 *
 *  description: 
 *  ------------------------------------------------------------------------------------
@@ -7,14 +7,14 @@
 
 import React, { Component } from 'react';
 
-import Nav from './nav/Nav';
-
-class Header extends React.Component {
+class About extends React.Component {
 	render() {
 		return (
-			<Nav />
+			<div className="container">
+				About
+			</div>
 		);
 	}
 }
 
-export default Header;
+export default About;

@@ -1,15 +1,19 @@
-/*  ------------------------------------------------
-./src/index.js
----------------------------------------------------- */
+/* path to file: ./src/index.js
+*
+*  description: 
+*  ------------------------------------------------------------------------------------
+*/
 
 
 import React from 'react';
 import { render } from 'react-dom';
 
-// components
+/* components
+*/
 import App from './components/App.jsx';
 
-// stylesheets
+/* stylesheets
+*/
 require('./scss/main.scss');
 
 render(
