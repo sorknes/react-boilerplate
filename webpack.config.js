@@ -42,15 +42,6 @@ const buildPath         = path.join(__dirname, './build'),
 const plugins = [
   new SpritePlugin(),
 
-  // new webpack.optimize.CommonsChunkPlugin({
-  //   name: 'vendor',
-  //   filename: 'vendor-[hash].js',
-  //   minChunks(module) {
-  //     const context = module.context;
-  //     return context && context.indexOf('node_modules') >= 0;
-  //   },
-  // }),
-
   new webpack.NamedModulesPlugin(),
 
   new HtmlWebpackPlugin({
@@ -164,10 +155,8 @@ if (isProduction) {
 
 module.exports = {
   devtool: isProduction ? false : 'source-map',
-
   context: jsSourcePath,
-
-  entry: __dirname + '/src/index.js',
+  entry: __dirname + '/src/index.jsx',
 
   output: {
     path: buildPath,
@@ -193,7 +182,7 @@ module.exports = {
   // devlopment server
   devServer: {
     contentBase: isProduction ? buildPath : sourcePath,
-    // historyApiFallback: true,
+    historyApiFallback: true,
     port: devPort,
     compress: isProduction,
     inline: !isProduction,
