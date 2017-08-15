@@ -10,6 +10,7 @@ import React, { Component } from 'react';
 /* components
 */
 import Header from './header/Header';
+import Footer from './footer/Footer';
 
 class Base extends React.Component {
 	render() {
@@ -17,9 +18,15 @@ class Base extends React.Component {
 			<div>
 				<Header />
 
-				{this.props.children}
+				<div className="container">
+					<main id="main">
+						<section role="main">
+							{this.props.children}
+						</section>
+					</main>
+				</div>
 
-				<footer>footer</footer>
+				<Footer/>
 			</div>
 		);
 	}

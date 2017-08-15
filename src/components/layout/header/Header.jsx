@@ -14,12 +14,10 @@ import Nav from './nav/Nav';
 class Header extends React.Component {
 	render() {
 		return (
-			<div>
-				header start
-
-				<Nav />
-
-				header end
+			<div className="container-fluid">
+				<header id="main-header" className="" role="banner">
+					<Nav />
+				</header>
 			</div>
 		);
 	}

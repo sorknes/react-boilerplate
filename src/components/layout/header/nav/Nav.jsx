@@ -13,12 +13,16 @@ import {
 class Nav extends React.Component {
 	render() {
 		return (
-			<div>
-				<ul>
-					<li><Link to="/">Home</Link></li>
-					<li><Link to="/about">About</Link></li>
+			<nav id="main-nav" className="" role="navigation">
+				<ul role="menu">
+					<li role="none">
+						<Link to="/" role="menuitem" aria-label="Home" title="Home">Home</Link>
+					</li>
+					<li role="none">
+						<Link to="/about" role="menuitem" aria-label="About" title="About">About</Link>
+					</li>
 				</ul>
-			</div>
+			</nav>
 		)
 	}
 }

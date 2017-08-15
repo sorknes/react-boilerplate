@@ -10,11 +10,11 @@ import React, { Component } from 'react';
 class Home extends React.Component {
 	render() {
 		return (
-			<div className="test">
+			<div>
         <p>Lorm ipsum dolor sit amet</p>
 
 				test
-      </div>
+			</div>
 		);
 	}
 }

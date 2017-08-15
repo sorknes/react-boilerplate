@@ -10,8 +10,10 @@ import React, { Component } from 'react';
 class About extends React.Component {
 	render() {
 		return (
-			<div className="container">
-				About
+			<div>
+				<h1>Title</h1>
+
+				<p>text</p>
 			</div>
 		);
 	}
