@@ -2,10 +2,18 @@
 *
 *  description: output file that brings together all the parts
 *  ------------------------------------------------------------------------------------
+*
+*  namespacing
+*  ------------------------------------------------------------------------------------
+*  Namespacing in Sass is very useful for scoping project-specific styles and avoiding conflicts, e.g. with third party plugins og modules.
+*  Every selector, placeholder, mixin and function in the project should be namespaced.
+*  Namespace should be rb followed by the dash suffix -, like this: rb- (rb = (r)eact(b)oilerplate).
 */
 
 
-// 01 config - contains global styles, such as breakpoints, fonts, colors, etc
+@charset "utf-8";
+
+// contains global styles, such as breakpoints, fonts, colors, etc
 @import "01_config/all-configs";
 
 // contains global mixins, functions, helper selectors, etc.
@@ -20,11 +28,14 @@
 // contains styling for larger layout components; e.g. nav, header, footer, etc.
 @import "05_layout/all-layouts";
 
-// contains different helper classes; e.g. hidden, etc.
-@import "06_helpers/all-helpers";
-
 // contains styling from external vendors
-@import "07_vendor/all-vendors";
+@import "06_vendor/all-vendors";
+
+// contains different helper classes; e.g. hidden, etc. (should always be at the bottom)
+@import "07_helpers/all-helpers";
+
+// contains all the CSS declarations, hacks and things we are not proud of in a shame file. 
+@import "shame";
 
 // contains print specific styling
 @import "print";

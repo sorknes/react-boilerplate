@@ -21,6 +21,9 @@ class Nav extends React.Component {
 					<li role="none">
 						<Link to="/about" role="menuitem" aria-label="About" title="About">About</Link>
 					</li>
+					<li role="none">
+						<Link to="/contact" role="menuitem" aria-label="Contact" title="Contact">Contact</Link>
+					</li>
 				</ul>
 			</nav>
 		)

@@ -10,7 +10,6 @@ import { render } from 'react-dom';
 
 /* components
 */
-// import App from './components/App.jsx';
 import Routes from './Routes';
 
 /* stylesheets
@@ -18,6 +17,5 @@ import Routes from './Routes';
 require('./scss/main.scss');
 
 render(
-	// <App />, document.querySelector('#app')
 	<Routes />, document.querySelector('#app')
 );

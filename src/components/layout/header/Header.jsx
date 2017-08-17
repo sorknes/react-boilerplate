@@ -15,7 +15,7 @@ import Nav from './nav/Nav';
 class Header extends React.Component {
 	render() {
 		return (
-			<div className="container-fluid">
+			<div className="rb-container-fluid">
 				<header id="main-header" className="" role="banner">
 					<Logo />
 

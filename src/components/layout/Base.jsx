@@ -18,7 +18,7 @@ class Base extends React.Component {
 			<div>
 				<Header />
 
-				<div className="container">
+				<div className="rb-container">
 					<main id="main">
 						<section role="main">
 							{this.props.children}
