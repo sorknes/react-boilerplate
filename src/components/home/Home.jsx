@@ -11,9 +11,9 @@ class Home extends React.Component {
 	render() {
 		return (
 			<div>
-        <p>Lorm ipsum dolor sit amet</p>
-
-				test
+        <h1>Home</h1>
+				
+				<p>text</p>
 			</div>
 		);
 	}
